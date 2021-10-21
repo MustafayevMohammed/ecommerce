@@ -36,9 +36,12 @@
     <div class="col-md-6">
 
       <h5>{{product.title}}</h5>
-      <p class="mb-2 text-muted text-uppercase small">Shirts</p>
+      <hr>
+      {% comment %} <p class="mb-2 text-muted text-uppercase small">Shirts</p> {% endcomment %}
       <p><span class="mr-1"><strong>${{product.price}}</strong></span></p>
+      <hr>
       <p class="pt-1">{{product.description}}.</p>
+      <hr>
       <div class="table-responsive">
         <table class="table table-sm table-borderless mb-0">
           <tbody>
@@ -51,8 +54,8 @@
               <td>Black</td>
             </tr>
             <tr>
-              <th class="pl-0 w-25" scope="row"><strong>Delivery</strong></th>
-              <td>USA, Europe</td>
+              <th class="pl-0 w-25" scope="row"><strong>Kategoriya</strong></th>
+              <td>{{product.category}}</td>
             </tr>
           </tbody>
         </table>
@@ -68,6 +71,7 @@
         </table>
       </div>
       <button type="button" class="btn btn-primary btn-md mr-1 mb-2">Add To Cart</button>
+      <hr>
     </div>
   </div>
   
