@@ -15,3 +15,11 @@ def cart(request):
 
 def checkout(request):
     return render(request,"checkout.html")
+
+def detail(request,id):
+    product = models.Product.objects.get(id=id)
+    
+    context = {
+        "product":product,
+    }
+    return render(request,"detail.html",context)
